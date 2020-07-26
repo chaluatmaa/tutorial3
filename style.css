@@ -1,0 +1,172 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.bg
+{
+    position: relative;
+    background: url('img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bg2
+
+{
+    position: relative;
+    background: url('img/underwater.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.btn
+{
+    box-sizing: border-box;
+    position: absolute;
+    top: 400px;
+    left: 150px;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.4rem;
+    border: 2px solid white;
+    padding: 20px;
+    background: none;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover
+{
+    box-shadow: 0 3px 5px 0px  #6AF3EE,
+                0 -3px 5px 0px #6AF3EE,
+                3px 0px 5px 0px #6AF3EE,
+                -3px 0px 5px 0px #6AF3EE;
+}
+
+.bubble
+{
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.bubble img
+{
+    position: relative;
+    bottom: -100px;
+    left: 0px;
+    width: 50px;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    animation: burst 6s linear infinite ;
+    transition: all 0.3s ease;
+}
+
+
+.bubble img:nth-child(1)
+{
+    animation-delay:.2s ;
+    width: 70px;
+    height: auto;
+}
+
+.bubble img:nth-child(8)
+{
+    animation-delay:.8s ;
+    width: 100px;
+    height: auto;
+}
+
+.bubble img:nth-child(3)
+{
+    animation-delay:2s ;
+    width: 40px;
+    height: auto;
+}
+
+.bubble img:nth-child(6)
+{
+    animation-delay:4.8s ;
+    width: 60px;
+    height: auto;
+}
+
+.bubble img:nth-child(2)
+{
+    animation-delay:1.2s ;
+    width: 10px;
+    height: auto;
+}
+
+.bubble img:nth-child(5)
+{
+    animation-delay:3.6s ;
+    width: 45px;
+    height: auto;
+}
+
+.bubble img:nth-child(7)
+{
+    animation-delay:2.2s ;
+    width: 60px;
+    height: auto;
+}
+
+.bubble img:nth-child(4)
+{
+    animation-delay:1s ;
+    width: 25px;
+    height: auto;
+}
+
+
+
+@keyframes burst
+{
+    0%
+    {
+        opacity : 0;
+        transform: translateY(0vh);
+    }
+
+    20%
+    {
+        opacity: 1;
+        
+    }
+
+    40%
+    {
+        opacity: 1;
+        
+    }
+
+    60%
+    {
+        opacity: 1;
+    }
+
+    100%
+    {
+        opacity: 0;
+        transform: translateY(-80vh);
+    }
+
+}
